@@ -1,0 +1,50 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  height: 300px;
+
+  grid-template-areas:
+    "left up-left up-right"
+    "left center center"
+    "left down-left down-right";
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.left {
+  background-color: red;
+  grid-area: left;
+}
+
+.center {
+  background-color: blueviolet;
+  grid-area: center;
+}
+
+.up-right {
+  background-color: yellow;
+  grid-area: up-right;
+}
+
+.up-left {
+  background-color: blue;
+  grid-area: up-left;
+}
+
+.down-left {
+  background-color: green;
+  grid-area: down-left;
+}
+
+.down-right {
+  background-color: brown;
+  grid-area: down-right;
+}
